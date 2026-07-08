@@ -13,13 +13,15 @@ transparenten, gewichteten Methodik bewertet (Score 0–100).
 ```
 .
 ├── index.html                                    Startseite / Kategorienübersicht
+├── CNAME                                          Custom Domain (vergleichsdoch.de)
 ├── kategorien/
 │   ├── arbeitsmedizinische-software.html          Vergleich Arbeitsmedizin
 │   ├── immobilien-metasuchmaschinen.html          Vergleich Immobilien-Meta-Suche
 │   └── kita-verwaltungssoftware.html              Vergleich Kita-Verwaltung
 ├── assets/
-│   ├── css/styles.css                             Gemeinsames Stylesheet (CSS-Variablen)
-│   └── js/main.js                                 Heatmap-Einfärbung der Detailtabelle
+│   └── css/site.css                               Gemeinsames Stylesheet (Basis + :hover)
+├── tools/
+│   └── generate.py                                Generator: erzeugt alle HTML-Seiten
 ├── data/
 │   ├── arbeitsmedizinische-software.json           Strukturierte Daten (Source of Truth)
 │   ├── immobilien-metasuchmaschinen.json
@@ -32,6 +34,10 @@ transparenten, gewichteten Methodik bewertet (Score 0–100).
     ├── claude-design-prompt.md                     Basis-Prompt für Claude Design
     └── claude-design-prompt-update.md              Update: 2 neue Vergleiche
 ```
+
+Das Design (Claude-Design-Handoff) ist als statisches HTML umgesetzt. Die
+HTML-Seiten werden von `tools/generate.py` erzeugt – Inhalte/Scores dort im
+Datenblock pflegen und `python3 tools/generate.py` ausführen.
 
 ## Ansehen
 
@@ -52,16 +58,16 @@ Die Bewertungsdaten liegen maschinenlesbar in
 
 ## Neue Kategorie hinzufügen
 
-1. Datendatei unter `data/<slug>.json` anlegen (Kriterien, Gewichte, Produkte, Scores).
-2. Analyse unter `analyse/<slug>.md` schreiben.
-3. Vergleichsseite `kategorien/<slug>.html` erstellen (Struktur der Arbeitsmedizin-Seite als Vorlage).
-4. Karte auf der Startseite (`index.html`) ergänzen.
+1. Analyse unter `analyse/<slug>.md` schreiben, Daten in `data/<slug>.json` ablegen.
+2. In `tools/generate.py` einen Datenblock (Produkte, Kriterien, Texte) ergänzen.
+3. `python3 tools/generate.py` ausführen – die Kategorieseite und die Startseiten-Karte
+   werden im einheitlichen Design erzeugt.
 
 ## Design
 
-Das finale Design wird über den Prompt in
-[`design/claude-design-prompt.md`](design/claude-design-prompt.md) mit **Claude Design**
-erzeugt. Das mitgelieferte Stylesheet ist eine funktionale Basis.
+Das Design stammt aus **Claude Design** und ist als statisches HTML umgesetzt
+(Schibsted Grotesk, Testsieger-Block, Ranking, Heatmap, dunkle Methodik-/Empfehlungs-
+Sektion). Prompts unter [`design/`](design/) dokumentieren die Design-Vorgaben.
 
 ---
 
