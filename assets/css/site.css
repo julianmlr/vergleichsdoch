@@ -1,0 +1,23 @@
+/* vergleichsdoch – produktion. Aus dem Claude-Design-Handoff überführt.
+   Globale Basis + :hover-Zustände (im Design als style-hover angelegt). */
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{margin:0;background:#f6f8fb;font-family:'Schibsted Grotesk',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:#414e60;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;}
+a{color:#0b5cab;text-decoration:none;}
+a:hover{color:#08477f;}
+::selection{background:rgba(11,92,171,.16);}
+h1,h2,h3{margin:0;}
+p{margin:0;}
+table{border-collapse:collapse;}
+
+/* Interaktions-Zustände */
+.vd-nav-link:hover{background:#eef2f8 !important;color:#16202e !important;}
+.vd-btn-primary:hover{background:#08477f !important;}
+.vd-btn-outline:hover{border-color:#0b5cab !important;color:#0b5cab !important;}
+.vd-crumb:hover{color:#0b5cab !important;}
+.vd-cat-card:hover{transform:translateY(-4px);box-shadow:0 1px 2px rgba(16,32,46,.04),0 22px 44px -20px rgba(16,32,46,.28) !important;border-color:#cdd9e8 !important;}
+.vd-ranking-cta:hover{background:#f7faff !important;}
+.vd-foot-link:hover{color:#fff !important;}
+.vd-rec-gold:hover{background:#f0b71a !important;}
+.vd-rec-ghost:hover{background:rgba(255,255,255,.18) !important;}
+.vd-row:hover{background:var(--rh) !important;}
