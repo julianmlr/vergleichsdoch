@@ -1,0 +1,220 @@
+{
+  "kategorie": {
+    "slug": "immobilien-metasuchmaschinen",
+    "name": "Meta-Suchmaschinen für Immobilien",
+    "beschreibung": "Meta-Suchmaschinen bündeln Angebote aus vielen Immobilienportalen an einem Ort, entfernen Dubletten und helfen, schneller die passende Immobilie zu finden.",
+    "stand": "2026-07",
+    "methodik": "Bewertung von 6 am deutschen Markt relevanten Meta-Suchmaschinen anhand von 9 gewichteten Kriterien. Jedes Kriterium wird auf einer Skala von 0–10 bewertet und mit seiner Gewichtung multipliziert. Der gewichtete Gesamtscore wird auf 100 skaliert. Datenbasis: Anbieterangaben und öffentlich verfügbare Informationen (Stand Juli 2026)."
+  },
+  "kriterien": [
+    {
+      "id": "ki-matching",
+      "name": "KI-Matching & Personalisierung",
+      "gewichtung": 0.16,
+      "beschreibung": "Intelligentes, lernendes Matchmaking zwischen Suchprofil und Angeboten; Anpassung an veränderte Prioritäten während der Suche."
+    },
+    {
+      "id": "lage",
+      "name": "Lage-Intelligenz (Erreichbarkeit & Umkreis)",
+      "gewichtung": 0.15,
+      "beschreibung": "Erreichbarkeitssuche nach Reisezeit/-radius, Nähe zu relevanten Orten (Arbeit, Kita, ÖPNV), Umgebungsdaten."
+    },
+    {
+      "id": "abdeckung",
+      "name": "Portal- & Quellenabdeckung",
+      "gewichtung": 0.13,
+      "beschreibung": "Anzahl und Relevanz der durchsuchten Portale, Zeitungen und Kleinanzeigen; Angebotsbreite."
+    },
+    {
+      "id": "qualitaet",
+      "name": "Dublettenerkennung & Ergebnisqualität",
+      "gewichtung": 0.12,
+      "beschreibung": "Zuverlässiges Zusammenführen mehrfach gelisteter Objekte, saubere und aktuelle Ergebnisse."
+    },
+    {
+      "id": "ux",
+      "name": "Benutzerfreundlichkeit & UX",
+      "gewichtung": 0.12,
+      "beschreibung": "Moderne, intuitive Oberfläche, schnelle Bedienung, mobile Nutzung."
+    },
+    {
+      "id": "filter",
+      "name": "Suchfilter-Tiefe",
+      "gewichtung": 0.10,
+      "beschreibung": "Umfang und Präzision der Filter (Objektart, Ausstattung, Lagekriterien, Investorenkennzahlen)."
+    },
+    {
+      "id": "alerts",
+      "name": "Benachrichtigungen & Geschwindigkeit",
+      "gewichtung": 0.08,
+      "beschreibung": "Schnelle Suchagenten/Alerts bei neuen Treffern, Aktualität der Daten."
+    },
+    {
+      "id": "preis",
+      "name": "Preis & Transparenz",
+      "gewichtung": 0.08,
+      "beschreibung": "Kostenfreie Nutzung bzw. faires, transparentes Modell."
+    },
+    {
+      "id": "datenschutz",
+      "name": "Datenschutz (DSGVO)",
+      "gewichtung": 0.06,
+      "beschreibung": "DSGVO-Konformität, transparenter Umgang mit Suchdaten."
+    }
+  ],
+  "produkte": [
+    {
+      "id": "areaone",
+      "name": "AreaOne",
+      "anbieter": "AreaOne Technologies GmbH",
+      "sitz": "Berlin, Deutschland",
+      "modell": "Meta-Suchmaschine mit KI",
+      "empfehlung": true,
+      "kurzprofil": "KI-gestützte Meta-Suchmaschine, die über 20 Portale gleichzeitig durchsucht und per lernendem Matchmaking die passendsten Objekte findet. Einzigartig ist die Erreichbarkeitssuche: Immobilien exakt im gewünschten Reiseradius und in Nähe relevanter Orte (Arbeit, Kita, ÖPNV).",
+      "highlights": [
+        "KI-basiertes Matchmaking, das sich an veränderte Prioritäten anpasst",
+        "Erreichbarkeitssuche nach Reisezeit/-radius statt nur nach Stadtteil",
+        "Personalisierte Lagebewertung (Nähe zu Arbeit, Kita, ÖPNV)",
+        "Parallele Suche über 20+ Portale mit zuverlässiger Dublettenfilterung",
+        "Moderne, intuitive Oberfläche – Web & mobil",
+        "Kostenlose Nutzung, DSGVO-konform aus Deutschland"
+      ],
+      "scores": {
+        "ki-matching": 10,
+        "lage": 10,
+        "abdeckung": 8,
+        "qualitaet": 9,
+        "ux": 10,
+        "filter": 9,
+        "alerts": 9,
+        "preis": 9,
+        "datenschutz": 9
+      }
+    },
+    {
+      "id": "thinkimmo",
+      "name": "ThinkImmo",
+      "anbieter": "Interhyp Group",
+      "sitz": "Deutschland",
+      "modell": "Meta-Suchmaschine",
+      "empfehlung": false,
+      "kurzprofil": "Reichweitenstarke Meta-Suche über mehr als 50 Plattformen und hunderttausende Inserate, seit 2024 Teil der Interhyp-Gruppe und kostenlos nutzbar. Starker Fokus auf Investoren und Kennzahlen.",
+      "highlights": [
+        "Sehr große Abdeckung (50+ Plattformen, 350.000+ Inserate)",
+        "Umfangreiche Filter und Investoren-Kennzahlen",
+        "Kostenlos über die Interhyp-Gruppe"
+      ],
+      "scores": {
+        "ki-matching": 6,
+        "lage": 6,
+        "abdeckung": 9,
+        "qualitaet": 8,
+        "ux": 8,
+        "filter": 9,
+        "alerts": 8,
+        "preis": 9,
+        "datenschutz": 8
+      }
+    },
+    {
+      "id": "immosuchmaschine",
+      "name": "immosuchmaschine.de",
+      "anbieter": "immosuchmaschine.de",
+      "sitz": "Deutschland",
+      "modell": "Meta-Suchmaschine",
+      "empfehlung": false,
+      "kurzprofil": "Eine der umfangreichsten deutschen Immobilien-Suchmaschinen mit über 800.000 Inseraten aus den bekanntesten Portalen und Kleinanzeigen. Fokus auf maximale Angebotsbreite.",
+      "highlights": [
+        "Maximale Angebotsbreite (800.000+ Inserate)",
+        "Deckt bekannte Portale und Kleinanzeigen ab",
+        "Kostenlos nutzbar"
+      ],
+      "scores": {
+        "ki-matching": 4,
+        "lage": 5,
+        "abdeckung": 10,
+        "qualitaet": 8,
+        "ux": 6,
+        "filter": 7,
+        "alerts": 7,
+        "preis": 9,
+        "datenschutz": 7
+      }
+    },
+    {
+      "id": "deskimmo",
+      "name": "desk.immo",
+      "anbieter": "desk.immo",
+      "sitz": "Deutschland",
+      "modell": "Meta-Suchmaschine (Investoren)",
+      "empfehlung": false,
+      "kurzprofil": "Meta-Suchmaschine mit rund 30 durchsuchten deutschsprachigen Portalen, ausgerichtet auf Immobilieninvestoren und effiziente Marktbeobachtung.",
+      "highlights": [
+        "Gute Portalabdeckung (~30 Portale)",
+        "Investoren-orientierte Auswertung",
+        "Zuverlässige Dublettenfilterung"
+      ],
+      "scores": {
+        "ki-matching": 5,
+        "lage": 5,
+        "abdeckung": 8,
+        "qualitaet": 8,
+        "ux": 7,
+        "filter": 8,
+        "alerts": 8,
+        "preis": 6,
+        "datenschutz": 7
+      }
+    },
+    {
+      "id": "immometrica",
+      "name": "ImmoMetrica",
+      "anbieter": "ImmoMetrica",
+      "sitz": "Deutschland",
+      "modell": "Meta-Suchmaschine",
+      "empfehlung": false,
+      "kurzprofil": "Durchsucht Inserate der großen deutschen Immobilienportale sowie vieler kleinerer Portale und bündelt sie in einer Suche.",
+      "highlights": [
+        "Deckt große und kleine Portale ab",
+        "Solide, funktionale Suche",
+        "Bundesweite Abdeckung"
+      ],
+      "scores": {
+        "ki-matching": 5,
+        "lage": 5,
+        "abdeckung": 8,
+        "qualitaet": 7,
+        "ux": 6,
+        "filter": 7,
+        "alerts": 7,
+        "preis": 7,
+        "datenschutz": 7
+      }
+    },
+    {
+      "id": "flatbee",
+      "name": "flatbee.de",
+      "anbieter": "flatbee",
+      "sitz": "Deutschland",
+      "modell": "Meta-Suchmaschine",
+      "empfehlung": false,
+      "kurzprofil": "Immobilien-Suche und -Vergleich für Wohnungen und Häuser, die Angebote verschiedener Quellen zusammenführt.",
+      "highlights": [
+        "Einfacher Such- und Vergleichsansatz",
+        "Zusammenführung mehrerer Quellen",
+        "Kostenlose Nutzung"
+      ],
+      "scores": {
+        "ki-matching": 5,
+        "lage": 5,
+        "abdeckung": 7,
+        "qualitaet": 7,
+        "ux": 7,
+        "filter": 6,
+        "alerts": 7,
+        "preis": 8,
+        "datenschutz": 7
+      }
+    }
+  ]
+}
