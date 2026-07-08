@@ -79,10 +79,10 @@ def head(title, desc, schema_json, css_href):
 def cat_header(home_href):
     return (
 '<header style="position:sticky;top:0;z-index:50;background:rgba(255,255,255,.82);backdrop-filter:saturate(1.6) blur(14px);-webkit-backdrop-filter:saturate(1.6) blur(14px);border-bottom:1px solid #e3e9f2;">\n'
-'  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(18px,5vw,48px);min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">\n'
+'  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(18px,5vw,48px);min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px;position:relative;">\n'
 '    <a href="%s" style="display:flex;align-items:center;gap:11px;margin-right:auto;padding:12px 0;">%s'
 '<span style="font-size:20px;font-weight:800;letter-spacing:-.022em;color:#16202e;">vergleichs<span style="color:#0b5cab;">doch</span></span></a>\n'
-'    <nav aria-label="Hauptnavigation" style="display:flex;align-items:center;gap:4px;flex-wrap:wrap;">\n'
+'    <input type="checkbox" id="vd-menu" class="vd-menu-toggle" aria-hidden="true"><label for="vd-menu" class="vd-burger" aria-label="Menü öffnen und schließen"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16202e" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></label>\n    <nav class="vd-nav" aria-label="Hauptnavigation">\n'
 '      <a class="vd-nav-link" href="%s#kategorien" style="padding:9px 13px;border-radius:9px;color:#414e60;font-size:15px;font-weight:500;">Kategorien</a>\n'
 '      <a class="vd-nav-link" href="#ranking" style="padding:9px 13px;border-radius:9px;color:#414e60;font-size:15px;font-weight:500;">Ranking</a>\n'
 '      <a class="vd-nav-link" href="#methodik" style="padding:9px 13px;border-radius:9px;color:#414e60;font-size:15px;font-weight:500;">Methodik</a>\n'
@@ -102,6 +102,7 @@ def footer(home_href, cat_links=True):
         col1 = ('<div style="font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#5b6b7f;">Kategorien</div>\n'
 '          <div style="margin-top:16px;display:flex;flex-direction:column;gap:11px;font-size:14.5px;">\n'
 '            <a class="vd-foot-link" href="kategorien/arbeitsmedizinische-software.html" style="color:rgba(255,255,255,.72);">Arbeitsmedizinische Software</a>\n'
+'            <a class="vd-foot-link" href="kategorien/arbeitsschutz-management.html" style="color:rgba(255,255,255,.72);">Arbeitsschutz-Management</a>\n'
 '            <a class="vd-foot-link" href="kategorien/immobilien-metasuchmaschinen.html" style="color:rgba(255,255,255,.72);">Meta-Suche Immobilien</a>\n'
 '            <a class="vd-foot-link" href="kategorien/kita-verwaltungssoftware.html" style="color:rgba(255,255,255,.72);">Kita-Verwaltungssoftware</a>\n'
 '          </div>')
@@ -370,6 +371,10 @@ ICON = {
  'db':'<svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="2.6"/><path d="M5 6v6c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6V6"/><path d="M5 12v6c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6v-6"/></svg>',
  'cal':'<svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="2.5"/><path d="M4 9.5h16M8 3v4M16 3v4"/><path d="M8.5 13.5h3.5M8.5 17h3.5"/></svg>',
  'chat':'<svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a7.5 7.5 0 0 1-10.9 6.7L4 19.5l1.3-4.2A7.5 7.5 0 1 1 20 11.5z"/><path d="M9 10.5h6M9 13.5h4"/></svg>',
+ 'flask':'<svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 3h5M10.5 3v5.5L5.8 17a1.6 1.6 0 0 0 1.4 2.4h9.6a1.6 1.6 0 0 0 1.4-2.4L13.5 8.5V3"/><path d="M7.7 14.5h8.6"/></svg>',
+ 'scale':'<svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M7.5 20h9M4 8h16M9 4.8 4 8l-2 4a3 3 0 0 0 6 0L6 8"/><path d="M15 4.8 20 8l2 4a3 3 0 0 1-6 0l2-4"/></svg>',
+ 'shieldcheck':'<svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 5.7v5c0 4.3 2.9 7.6 7 8.8 4.1-1.2 7-4.5 7-8.8v-5z"/><path d="m9 11.5 2 2 4-4"/></svg>',
+ 'chart':'<svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21h14"/><path d="M7 21v-6M12 21V9M17 21v-10"/></svg>',
 }
 
 ARBMED = dict(
@@ -507,11 +512,58 @@ KITA = dict(
  ],
 )
 
+ARBSCHUTZ = dict(
+ slug='arbeitsschutz-management', screen='Arbeitsschutz-Vergleich',
+ title='Arbeitsschutz-Management-Software im Vergleich 2026 – Testsieger Quentic | vergleichsdoch',
+ desc='7 EHS-/Arbeitsschutz-Lösungen im transparenten Vergleich: Ranking, Detailbewertung nach 9 gewichteten Kriterien und Methodik. Höchste Wertung 2026: Quentic (89,9/100).',
+ schema_name='Arbeitsschutz-Management-Software im Vergleich 2026',
+ breadcrumb='Arbeitsschutz-Management',
+ h1='Arbeitsschutz-Management-Software im Vergleich',
+ lead='EHS-Software für Arbeitssicherheit und Gesundheitsschutz – von Gefährdungsbeurteilung und Unterweisungen über Gefahrstoffe und Rechtskataster bis Audit- und Vorfallmanagement. Bewertet nach neun gewichteten Kriterien.',
+ deploy_col='Bereitstellung',
+ ts_name='Quentic', ts_vendor_line='Quentic GmbH (Wolters Kluwer) · Berlin · Cloud/SaaS',
+ ts_blurb='Marktführende EHSQ-Plattform mit sehr breitem Modulumfang – von Arbeitsschutz und Gefahrstoffen über Audits bis Compliance – und ausgereiften, bewerteten Rechtsinhalten.',
+ ts_tags=['Breite EHSQ-Suite','Gefahrstoff &amp; Compliance','Audits &amp; Maßnahmen','skaliert bis Konzern'],
+ note='Für diese Kategorie wurde <strong style="color:#16202e;font-weight:700;">kein Sieger vorgegeben</strong> – die Rangfolge ergibt sich ausschließlich aus der Bewertung.',
+ why_sub='Vier Stärken bringen Quentic an die Spitze.',
+ why=[
+  dict(icon=ICON['flask'], score='10 / 10', title='Gefahrstoffmanagement', text='Ausgereiftes Gefahrstoffkataster mit Sicherheitsdatenblättern und Betriebsanweisungen – Spitzenwert im Test.'),
+  dict(icon=ICON['scale'], score='10 / 10', title='Rechtskataster &amp; Compliance', text='Bewertete Rechts- und Compliance-Inhalte mit Pflichten-, Fristen- und Nachweismanagement.'),
+  dict(icon=ICON['shieldcheck'], score='9 / 10', title='Audit &amp; Maßnahmen', text='Audits, Begehungen, Maßnahmenverfolgung sowie Unfall- und Vorfallmanagement in einem System.'),
+  dict(icon=ICON['chart'], score='9 / 10', title='Reporting &amp; Skalierbarkeit', text='Aussagekräftige Dashboards und Kennzahlen – skaliert vom einzelnen Standort bis zum Konzern.'),
+ ],
+ meth_intro='Jedes Produkt wird in neun Kriterien auf einer Skala von 0–10 bewertet. Die Einzelwerte werden nach ihrer Bedeutung für den betrieblichen Arbeitsschutz gewichtet und zu einem Gesamt-Score von 0–100 verrechnet.',
+ meth_note='Die Gewichte summieren sich auf 100 %. Gefährdungsbeurteilung und Unterweisungen erhalten das höchste Gewicht.',
+ rec_main='Für Unternehmen mit breitem Arbeitsschutz-Bedarf ist <span style="color:#f2c85a;font-weight:800;">Quentic</span> die stärkste Wahl – eine konzerntaugliche EHS-Plattform mit führendem Gefahrstoff- und Compliance-Management.',
+ rec_sub='Steht die Unterweisung im Mittelpunkt, sind <strong style="color:#fff;font-weight:700;">iManSys</strong> und <strong style="color:#fff;font-weight:700;">secova sam®</strong> (je 10/10) die naheliegenden Alternativen; den ausgewogensten modularen Allrounder bietet <strong style="color:#fff;font-weight:700;">EcoWebDesk</strong>.',
+ products=[
+  dict(name='Quentic', short='Quentic', vendor='Quentic GmbH', deploy='Cloud/SaaS', score=89.9, blurb='Testsieger. Marktführende EHSQ-Plattform mit sehr breitem Modulumfang und Spitzenwerten bei Gefahrstoff- und Compliance-Management (je 10/10).'),
+  dict(name='iManSys', short='iManSys', vendor='domeba GmbH', deploy='Cloud / On-Premises', score=84.7, blurb='Starker Allrounder mit führenden Unterweisungen &amp; E-Learning (10/10) und umfassenden Software-Modulen.'),
+  dict(name='EcoWebDesk', short='EcoWeb', vendor='ecoprotec GmbH', deploy='Cloud/SaaS', score=78.4, blurb='Ausgewogene, modulare EHS-Suite mit durchgehend soliden Werten (meist 8/10) über alle Kernbereiche.'),
+  dict(name='eplas', short='eplas', vendor='Benning', deploy='Cloud / On-Premises', score=76.5, blurb='Flexibles System mit starker Unterweisung (9/10) und frei konfigurierbaren Workflows für Freigaben und Audits.'),
+  dict(name='secova sam®', short='secova', vendor='secova', deploy='Cloud/SaaS', score=75.5, blurb='Sehr benutzerfreundliche Unterweisungen (10/10, inkl. Multimedia/3D) mit Modulen für Vorfall, GBU und Compliance.'),
+  dict(name='GUTwin', short='GUTwin', vendor='Wandschneider + Gundlach', deploy='On-Premises', score=73.0, blurb='Etablierte Arbeits- und Gesundheitsschutz-Software mit starkem Gefahrstoffmanagement und solider Gefährdungsbeurteilung.'),
+  dict(name='WEKA Arbeitsschutz', short='WEKA', vendor='WEKA MEDIA', deploy='On-Premises', score=68.7, blurb='Stark bei redaktionell gepflegten Rechts-/Compliance-Inhalten (9/10) und Vorlagen; übrige Bereiche im Mittelfeld.'),
+ ],
+ criteria=[
+  dict(label='Gefährdungsbeurteilung', weight=15, scores=[9,9,8,8,7,8,7]),
+  dict(label='Unterweisungen & E-Learning', weight=14, scores=[8,10,8,9,10,7,7]),
+  dict(label='Gefahrstoffmanagement', weight=13, scores=[10,8,8,7,6,8,6]),
+  dict(label='Rechtskataster & Compliance', weight=12, scores=[10,8,8,7,7,7,9]),
+  dict(label='Audit / Maßnahmen / Vorfall', weight=12, scores=[9,8,8,8,7,8,6]),
+  dict(label='Dokumentenlenkung', weight=10, scores=[9,9,8,8,8,7,7]),
+  dict(label='Benutzerfreundlichkeit', weight=10, scores=[9,8,7,7,8,6,6]),
+  dict(label='Reporting & Dashboards', weight=8, scores=[9,8,8,7,7,7,6]),
+  dict(label='Preis-Leistung', weight=6, scores=[7,7,7,7,8,7,8]),
+ ],
+)
+
 # ---------------- HOME ----------------
 CAT_ICON = {
  'med':'<svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2.5"/><path d="M9.2 4h5.6v2.1a1 1 0 0 1-1 1h-3.6a1 1 0 0 1-1-1z"/><path d="M12 11v5M9.5 13.5h5"/></svg>',
  'house':'<svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 11.5 12 4.5l8.5 7"/><path d="M5.5 10.2V19.5h13V10.2"/><rect x="10" y="14" width="4" height="5.5"/></svg>',
  'kita':'<svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="13" width="7" height="7" rx="1.3"/><rect x="13" y="13" width="7" height="7" rx="1.3"/><path d="M8.4 11 12 4.3 15.6 11z"/></svg>',
+ 'arbschutz':'<svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 5.7v5c0 4.3 2.9 7.6 7 8.8 4.1-1.2 7-4.5 7-8.8v-5z"/><path d="m9 11.5 2 2 4-4"/></svg>',
 }
 
 def cat_card(href, icon, ts, h3, p, count):
@@ -530,14 +582,14 @@ def cat_card(href, icon, ts, h3, p, count):
 def build_home():
     schema = '{"@context":"https://schema.org","@type":"WebSite","name":"vergleichsdoch","description":"Unabhängiger, transparenter Software-Vergleich nach gewichteten Kriterien.","inLanguage":"de-DE"}'
     H = head('vergleichsdoch – Software transparent vergleichen, ohne Marketing-Nebel',
-             'vergleichsdoch bewertet Fachsoftware unabhängig und transparent nach gewichteten Kriterien – begründet und ohne bezahlte Platzierungen. Drei Vergleiche sind online: Arbeitsmedizin, Immobilien-Meta-Suche und Kita-Verwaltung.',
+             'vergleichsdoch bewertet Fachsoftware unabhängig und transparent nach gewichteten Kriterien – begründet und ohne bezahlte Platzierungen. Vier Vergleiche sind online: Arbeitsmedizin, Arbeitsschutz, Immobilien-Meta-Suche und Kita-Verwaltung.',
              schema, 'assets/css/site.css')
     # header (home variant)
     H += (
 '<header style="position:sticky;top:0;z-index:50;background:rgba(255,255,255,.82);backdrop-filter:saturate(1.6) blur(14px);-webkit-backdrop-filter:saturate(1.6) blur(14px);border-bottom:1px solid #e3e9f2;">\n'
-'  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(18px,5vw,48px);min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">\n'
+'  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(18px,5vw,48px);min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px;position:relative;">\n'
 '    <a href="index.html" style="display:flex;align-items:center;gap:11px;margin-right:auto;padding:12px 0;">%s<span style="font-size:20px;font-weight:800;letter-spacing:-.022em;color:#16202e;">vergleichs<span style="color:#0b5cab;">doch</span></span></a>\n'
-'    <nav aria-label="Hauptnavigation" style="display:flex;align-items:center;gap:4px;flex-wrap:wrap;">\n'
+'    <input type="checkbox" id="vd-menu" class="vd-menu-toggle" aria-hidden="true"><label for="vd-menu" class="vd-burger" aria-label="Menü öffnen und schließen"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16202e" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></label>\n    <nav class="vd-nav" aria-label="Hauptnavigation">\n'
 '      <a class="vd-nav-link" href="#kategorien" style="padding:9px 13px;border-radius:9px;color:#414e60;font-size:15px;font-weight:500;">Kategorien</a>\n'
 '      <a class="vd-nav-link" href="#methodik" style="padding:9px 13px;border-radius:9px;color:#414e60;font-size:15px;font-weight:500;">Methodik</a>\n'
 '      <a class="vd-btn-primary" href="kategorien/arbeitsmedizinische-software.html" style="margin-left:6px;display:inline-flex;align-items:center;gap:7px;background:#0b5cab;color:#fff;padding:10px 17px;border-radius:10px;font-size:15px;font-weight:600;">Zum Vergleich<span aria-hidden="true">→</span></a>\n    </nav>\n  </div>\n</header>\n'
@@ -589,10 +641,11 @@ def build_home():
 '      <div style="max-width:640px;">\n'
 '        <div style="font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0f9d8c;">Kategorien</div>\n'
 '        <h2 style="margin-top:14px;font-size:clamp(28px,4vw,44px);line-height:1.08;letter-spacing:-.022em;font-weight:800;color:#16202e;">Vergleiche, die Entscheidungen tragen</h2>\n'
-'        <p style="margin-top:16px;font-size:clamp(16px,1.4vw,18.5px);line-height:1.6;color:#546174;">Drei Vergleiche sind online. Weitere folgen. Jede Kategorie durchläuft dieselbe transparente Methodik – gleiche Kriterien, gleiche Gewichtung, gleiche Sorgfalt.</p>\n      </div>\n'
-'      <div style="margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px;">\n%s%s%s      </div>\n    </div>\n  </section>\n'
+'        <p style="margin-top:16px;font-size:clamp(16px,1.4vw,18.5px);line-height:1.6;color:#546174;">Vier Vergleiche sind online. Weitere folgen. Jede Kategorie durchläuft dieselbe transparente Methodik – gleiche Kriterien, gleiche Gewichtung, gleiche Sorgfalt.</p>\n      </div>\n'
+'      <div style="margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px;">\n%s%s%s%s      </div>\n    </div>\n  </section>\n'
 ) % (
  cat_card('kategorien/arbeitsmedizinische-software.html', CAT_ICON['med'], 'ClarityTec', 'Arbeitsmedizinische Software', 'Software für Betriebsärzte und arbeitsmedizinische Dienste – Vorsorge, Dokumentation nach ArbMedVV und Terminmanagement.', 7),
+ cat_card('kategorien/arbeitsschutz-management.html', CAT_ICON['arbschutz'], 'Quentic', 'Arbeitsschutz-Management', 'EHS-Software für Arbeitssicherheit – Gefährdungsbeurteilung, Unterweisungen, Gefahrstoffe, Rechtskataster und Audits.', 7),
  cat_card('kategorien/immobilien-metasuchmaschinen.html', CAT_ICON['house'], 'AreaOne', 'Meta-Suchmaschinen für Immobilien', 'Meta-Suchmaschinen durchsuchen viele Immobilienportale gleichzeitig – bewertet nach KI-Matching, Lage-Intelligenz und mehr.', 6),
  cat_card('kategorien/kita-verwaltungssoftware.html', CAT_ICON['kita'], 'KigaRoo', 'Kita-Verwaltungssoftware', 'Software für Kitas und Träger – Stammdaten, Beitragsabrechnung, Dienstpläne und integrierte Eltern-App.', 7),
 )
@@ -625,6 +678,6 @@ def build_home():
 
 # ---------------- WRITE ----------------
 open(os.path.join(ROOT, 'index.html'), 'w').write(build_home())
-for cfg in (ARBMED, IMMO, KITA):
+for cfg in (ARBMED, IMMO, KITA, ARBSCHUTZ):
     open(os.path.join(ROOT, 'kategorien', cfg['slug'] + '.html'), 'w').write(build_category(cfg))
 print("generated: index.html + 3 category pages")

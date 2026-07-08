@@ -1,0 +1,65 @@
+{
+  "kategorie": {
+    "slug": "arbeitsschutz-management",
+    "name": "Arbeitsschutz-Management-Software",
+    "beschreibung": "Software (EHS) für Arbeitssicherheit und Gesundheitsschutz: Gefährdungsbeurteilungen, Unterweisungen, Gefahrstoffe, Rechtskataster/Compliance, Audits, Maßnahmen und Vorfallmanagement.",
+    "stand": "2026-07",
+    "methodik": "Bewertung von 7 am DACH-Markt relevanten EHS-/Arbeitsschutz-Lösungen anhand von 9 gewichteten Kriterien (Skala 0–10, gewichtet, auf 100 skaliert). Datenbasis: Anbieterangaben und öffentlich verfügbare Informationen (Stand Juli 2026). Für diese Kategorie wurde kein Sieger vorgegeben – die Rangfolge ergibt sich aus der Bewertung.",
+    "hinweis_sieger": "objektiv ermittelt"
+  },
+  "kriterien": [
+    {"id": "gbu", "name": "Gefährdungsbeurteilung", "gewichtung": 0.15, "beschreibung": "Erstellung, Vorlagen, Wiederholung und Nachverfolgung von Gefährdungsbeurteilungen."},
+    {"id": "unterweisung", "name": "Unterweisungen & E-Learning", "gewichtung": 0.14, "beschreibung": "Digitale Unterweisungen, Schulungskataloge, Nachweise, Erinnerungen, Multimedia/E-Learning."},
+    {"id": "gefahrstoff", "name": "Gefahrstoffmanagement", "gewichtung": 0.13, "beschreibung": "Gefahrstoffkataster, Sicherheitsdatenblätter, Betriebsanweisungen, Substitutionsprüfung."},
+    {"id": "rechtskataster", "name": "Rechtskataster & Compliance", "gewichtung": 0.12, "beschreibung": "Pflichtenmanagement, bewertete Rechts-/Compliance-Inhalte, Fristen und Nachweise."},
+    {"id": "vorfall", "name": "Audit-, Maßnahmen- & Vorfallmanagement", "gewichtung": 0.12, "beschreibung": "Audits/Begehungen, Maßnahmenverfolgung, Unfall- und Vorfallmanagement."},
+    {"id": "dokumente", "name": "Dokumentenlenkung & Betriebsanweisungen", "gewichtung": 0.10, "beschreibung": "Versionierte Dokumente, Betriebsanweisungen, Freigaben und Verteilung."},
+    {"id": "reporting", "name": "Reporting, Kennzahlen & Dashboards", "gewichtung": 0.08, "beschreibung": "Kennzahlen, Auswertungen und Dashboards für Management und Behörden."},
+    {"id": "ux", "name": "Benutzerfreundlichkeit & Integration", "gewichtung": 0.10, "beschreibung": "Moderne Oberfläche, mobile Nutzung, Cloud, Schnittstellen (HR, AD, API)."},
+    {"id": "preis", "name": "Preis-Leistung & Skalierbarkeit", "gewichtung": 0.06, "beschreibung": "Transparentes Modell, Gesamtbetriebskosten, Eignung von KMU bis Konzern."}
+  ],
+  "produkte": [
+    {
+      "id": "quentic", "name": "Quentic", "anbieter": "Quentic GmbH (Wolters Kluwer)", "sitz": "Berlin, Deutschland", "modell": "Cloud/SaaS", "empfehlung": true,
+      "kurzprofil": "Marktführende EHSQ-Plattform im DACH-Raum (Teil von Wolters Kluwer) mit sehr breitem Modulumfang – von Arbeitsschutz und Gefahrstoffen über Audits bis Compliance – und ausgereiften, bewerteten Rechts-/Compliance-Inhalten. Über 900 Kunden, viele Konzerne.",
+      "highlights": ["Sehr breite EHSQ-Suite (Arbeitsschutz, Umwelt, Gefahrstoff, Audit, Compliance)", "Ausgereiftes Gefahrstoffmanagement", "Bewertete Rechts- & Compliance-Inhalte", "Starkes Reporting/Dashboards, skaliert bis Konzern"],
+      "scores": {"gbu": 9, "unterweisung": 8, "gefahrstoff": 10, "rechtskataster": 10, "vorfall": 9, "dokumente": 9, "reporting": 9, "ux": 9, "preis": 7}
+    },
+    {
+      "id": "imansys", "name": "iManSys", "anbieter": "domeba GmbH", "sitz": "Chemnitz, Deutschland", "modell": "Cloud / On-Premises", "empfehlung": false,
+      "kurzprofil": "Deutsche EHS-Software mit über 1.500 Kunden, besonders stark bei Unterweisungen und E-Learning sowie Gefährdungsbeurteilungen, Betriebsanweisungen und Rechtskataster. Verbreitet im produzierenden Gewerbe und öffentlichen Sektor.",
+      "highlights": ["Sehr starke Unterweisungen & E-Learning", "Umfassende Software-Welten (Module)", "Gefährdungsbeurteilung & Betriebsanweisungen stark"],
+      "scores": {"gbu": 9, "unterweisung": 10, "gefahrstoff": 8, "rechtskataster": 8, "vorfall": 8, "dokumente": 9, "reporting": 8, "ux": 8, "preis": 7}
+    },
+    {
+      "id": "ecowebdesk", "name": "EcoWebDesk", "anbieter": "ecoprotec GmbH", "sitz": "Deutschland", "modell": "Cloud/SaaS", "empfehlung": false,
+      "kurzprofil": "Modulare EHS-Management-Software für Arbeitsschutz, Umwelt und Energie mit ausgewogenem Funktionsumfang über alle Kernbereiche.",
+      "highlights": ["Ausgewogene, modulare EHS-Suite", "Arbeitsschutz, Umwelt & Energie abgedeckt", "Solide über alle Kernbereiche"],
+      "scores": {"gbu": 8, "unterweisung": 8, "gefahrstoff": 8, "rechtskataster": 8, "vorfall": 8, "dokumente": 8, "reporting": 8, "ux": 7, "preis": 7}
+    },
+    {
+      "id": "eplas", "name": "eplas", "anbieter": "Benning IT-Systemhaus", "sitz": "Deutschland", "modell": "Cloud / On-Premises", "empfehlung": false,
+      "kurzprofil": "Flexibles EHS-System mit starkem Unterweisungsmodul und frei konfigurierbaren Workflows (z. B. für Freigaben und automatisierte Audit-Verteilung).",
+      "highlights": ["Starke Unterweisungen", "Flexible, konfigurierbare Workflows", "Audits & Checklisten anpassbar"],
+      "scores": {"gbu": 8, "unterweisung": 9, "gefahrstoff": 7, "rechtskataster": 7, "vorfall": 8, "dokumente": 8, "reporting": 7, "ux": 7, "preis": 7}
+    },
+    {
+      "id": "secova", "name": "secova sam®", "anbieter": "secova GmbH & Co. KG", "sitz": "Rheine, Deutschland", "modell": "Cloud/SaaS", "empfehlung": false,
+      "kurzprofil": "Browserbasierte EHS-Software mit Fokus auf rechtssichere Unterweisungen (inkl. Multimedia/3D) und Modulen für Vorfallmanagement, Gefährdungsbeurteilung und Compliance. Sehr benutzerfreundlich.",
+      "highlights": ["Führend bei digitalen Unterweisungen (Multimedia/3D)", "Sehr benutzerfreundlich", "Module für Vorfall, GBU & Compliance"],
+      "scores": {"gbu": 7, "unterweisung": 10, "gefahrstoff": 6, "rechtskataster": 7, "vorfall": 7, "dokumente": 8, "reporting": 7, "ux": 8, "preis": 8}
+    },
+    {
+      "id": "gutwin", "name": "GUTwin", "anbieter": "Wandschneider + Gundlach", "sitz": "Deutschland", "modell": "On-Premises", "empfehlung": false,
+      "kurzprofil": "Etablierte Arbeits- und Gesundheitsschutz-Software mit solidem Funktionsumfang, u. a. starkem Gefahrstoffmanagement und Gefährdungsbeurteilung.",
+      "highlights": ["Etabliert im Arbeits- & Gesundheitsschutz", "Starkes Gefahrstoffmanagement", "Solide Gefährdungsbeurteilung"],
+      "scores": {"gbu": 8, "unterweisung": 7, "gefahrstoff": 8, "rechtskataster": 7, "vorfall": 8, "dokumente": 7, "reporting": 7, "ux": 6, "preis": 7}
+    },
+    {
+      "id": "weka", "name": "WEKA Arbeitsschutz", "anbieter": "WEKA MEDIA", "sitz": "Deutschland", "modell": "On-Premises", "empfehlung": false,
+      "kurzprofil": "Arbeitsschutzlösung des Fachverlags WEKA mit besonderer Stärke bei rechtssicheren, redaktionell gepflegten Compliance-Inhalten und Vorlagen.",
+      "highlights": ["Starke, gepflegte Rechts-/Compliance-Inhalte", "Umfangreiche Vorlagen", "Solide Grundfunktionen"],
+      "scores": {"gbu": 7, "unterweisung": 7, "gefahrstoff": 6, "rechtskataster": 9, "vorfall": 6, "dokumente": 7, "reporting": 6, "ux": 6, "preis": 8}
+    }
+  ]
+}

@@ -7,6 +7,7 @@ transparenten, gewichteten Methodik bewertet (Score 0–100).
 - Arbeitsmedizinische Software · Testsieger: **ClarityTec** (94,1/100)
 - Meta-Suchmaschinen für Immobilien · Testsieger: **AreaOne** (93,0/100)
 - Kita-Verwaltungssoftware · Testsieger: **KigaRoo** (89,8/100, objektiv ermittelt)
+- Arbeitsschutz-Management-Software · Testsieger: **Quentic** (89,9/100, objektiv ermittelt)
 
 ## Projektstruktur
 
@@ -16,6 +17,7 @@ transparenten, gewichteten Methodik bewertet (Score 0–100).
 ├── CNAME                                          Custom Domain (vergleichsdoch.de)
 ├── kategorien/
 │   ├── arbeitsmedizinische-software.html          Vergleich Arbeitsmedizin
+│   ├── arbeitsschutz-management.html              Vergleich Arbeitsschutz (EHS)
 │   ├── immobilien-metasuchmaschinen.html          Vergleich Immobilien-Meta-Suche
 │   └── kita-verwaltungssoftware.html              Vergleich Kita-Verwaltung
 ├── assets/
