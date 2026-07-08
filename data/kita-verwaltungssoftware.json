@@ -1,0 +1,245 @@
+{
+  "kategorie": {
+    "slug": "kita-verwaltungssoftware",
+    "name": "Kita-Verwaltungssoftware",
+    "beschreibung": "Software für Kindertageseinrichtungen und Träger zur Verwaltung von Stammdaten und Verträgen, Beitragsabrechnung, Dienstplanung, Anwesenheit, pädagogischer Dokumentation und Elternkommunikation.",
+    "stand": "2026-07",
+    "methodik": "Bewertung von 7 am deutschen Markt relevanten Lösungen anhand von 9 gewichteten Kriterien. Jedes Kriterium wird auf einer Skala von 0–10 bewertet und mit seiner Gewichtung multipliziert. Der gewichtete Gesamtscore wird auf 100 skaliert. Datenbasis: Anbieterangaben und öffentlich verfügbare Informationen (Stand Juli 2026). Für diese Kategorie wurde kein Sieger vorgegeben – die Rangfolge ergibt sich aus der Bewertung.",
+    "hinweis_sieger": "objektiv ermittelt"
+  },
+  "kriterien": [
+    {
+      "id": "stammdaten",
+      "name": "Stammdaten- & Vertragsverwaltung",
+      "gewichtung": 0.15,
+      "beschreibung": "Verwaltung von Kindern, Verträgen, Betreuungszeiten, Anmeldungen und Wartelisten."
+    },
+    {
+      "id": "abrechnung",
+      "name": "Beitragsabrechnung & Finanzen",
+      "gewichtung": 0.14,
+      "beschreibung": "Elternbeiträge, Verpflegung, Zuschüsse, SEPA, Rechnungen und Steuerbescheinigungen, Buchhaltungsschnittstellen (z. B. DATEV)."
+    },
+    {
+      "id": "eltern",
+      "name": "Eltern-Kommunikation (App)",
+      "gewichtung": 0.13,
+      "beschreibung": "Eltern-App mit Nachrichten, Terminen, Abwesenheitsmeldungen, digitalem schwarzem Brett und Fotoalben."
+    },
+    {
+      "id": "dienstplan",
+      "name": "Dienstplan & Personalverwaltung",
+      "gewichtung": 0.12,
+      "beschreibung": "Dienst- und Urlaubsplanung, Zeiterfassung, Personalstammdaten, Fristen/Unterweisungen."
+    },
+    {
+      "id": "doku",
+      "name": "Pädagogische Dokumentation / Portfolio",
+      "gewichtung": 0.11,
+      "beschreibung": "Beobachtung und Entwicklungsdokumentation (z. B. IFP-Bögen), Portfolios, oft per Tablet."
+    },
+    {
+      "id": "anwesenheit",
+      "name": "Anwesenheit & Buchungszeiten",
+      "gewichtung": 0.10,
+      "beschreibung": "Erfassung von An-/Abwesenheiten und Buchungszeiten, Auswertungen für Förderung/Statistik."
+    },
+    {
+      "id": "datenschutz",
+      "name": "Datenschutz & Hosting",
+      "gewichtung": 0.10,
+      "beschreibung": "DSGVO-Konformität, Hosting in Deutschland, Rechtskonformität (auch länderspezifisch)."
+    },
+    {
+      "id": "ux",
+      "name": "Benutzerfreundlichkeit & Support",
+      "gewichtung": 0.09,
+      "beschreibung": "Moderne Oberfläche, geringer Einarbeitungsaufwand, erreichbarer Support."
+    },
+    {
+      "id": "preis",
+      "name": "Preis-Leistung",
+      "gewichtung": 0.06,
+      "beschreibung": "Transparentes Preismodell und Gesamtbetriebskosten."
+    }
+  ],
+  "produkte": [
+    {
+      "id": "kigaroo",
+      "name": "KigaRoo",
+      "anbieter": "KigaRoo GmbH",
+      "sitz": "Deutschland",
+      "modell": "Cloud / SaaS",
+      "empfehlung": true,
+      "kurzprofil": "Umfassender Allrounder für die Kita-Verwaltung: Stammdaten, Anmeldung & Wartelisten, individuelle Beitragsabrechnung (SEPA, Steuerbescheinigungen), Dienst- und Urlaubsplanung, Zeiterfassung sowie eine integrierte Eltern-App – streng DSGVO-konform.",
+      "highlights": [
+        "Vollständige Verwaltung inkl. Anmeldung & Wartelisten",
+        "Beitragsabrechnung mit SEPA-Einzug und Steuerbescheinigungen auf Knopfdruck",
+        "Dienstplanung, Zeiterfassung, Urlaubsplanung, Fristen/Unterweisungen",
+        "Integrierte Eltern-App (schwarzes Brett, Termine, Abwesenheit, Fotos, Rechnungen)",
+        "Streng DSGVO-konform, hohe IT-Sicherheitsstandards"
+      ],
+      "scores": {
+        "stammdaten": 10,
+        "abrechnung": 9,
+        "eltern": 9,
+        "dienstplan": 9,
+        "doku": 8,
+        "anwesenheit": 9,
+        "datenschutz": 9,
+        "ux": 9,
+        "preis": 8
+      }
+    },
+    {
+      "id": "kitaversum",
+      "name": "Kitaversum",
+      "anbieter": "Kitaversum",
+      "sitz": "Frankfurt, Deutschland",
+      "modell": "Cloud / SaaS",
+      "empfehlung": false,
+      "kurzprofil": "Moderne, KI-gestützte Kita-App und -Software; DSGVO-konform mit Servern in Frankfurt, staatlich gefördert und stark in Kommunikation und Dokumentation (KI für Doku und Übersetzung in viele Sprachen).",
+      "highlights": [
+        "Starke Eltern-Kommunikation, KI-gestützte Dokumentation",
+        "Übersetzung in viele Sprachen für mehrsprachige Elternschaft",
+        "DSGVO-konform, Server in Frankfurt"
+      ],
+      "scores": {
+        "stammdaten": 8,
+        "abrechnung": 7,
+        "eltern": 10,
+        "dienstplan": 7,
+        "doku": 9,
+        "anwesenheit": 8,
+        "datenschutz": 10,
+        "ux": 9,
+        "preis": 8
+      }
+    },
+    {
+      "id": "leandoo",
+      "name": "leandoo",
+      "anbieter": "leandoo",
+      "sitz": "Deutschland",
+      "modell": "Cloud / SaaS",
+      "empfehlung": false,
+      "kurzprofil": "Moderne All-in-one-Lösung für Verwaltung, Kommunikation und Organisation: Kinder- & Gruppenverwaltung, Elternkommunikation, Zeiterfassung, Trägeransicht, Dienst- und Personalplanung sowie Speisepläne.",
+      "highlights": [
+        "Breiter All-in-one-Funktionsumfang inkl. Trägeransicht",
+        "Kinder- & Gruppenverwaltung, Dienst- und Personalplanung",
+        "Elternkommunikation und Zeiterfassung integriert"
+      ],
+      "scores": {
+        "stammdaten": 8,
+        "abrechnung": 8,
+        "eltern": 8,
+        "dienstplan": 8,
+        "doku": 7,
+        "anwesenheit": 8,
+        "datenschutz": 8,
+        "ux": 8,
+        "preis": 7
+      }
+    },
+    {
+      "id": "adebiskita",
+      "name": "adebisKITA",
+      "anbieter": "AKDB",
+      "sitz": "Bayern, Deutschland",
+      "modell": "On-Premises / Server",
+      "empfehlung": false,
+      "kurzprofil": "Lösung der AKDB (Anstalt für kommunale Datenverarbeitung in Bayern) mit Fokus auf rechtssichere Verwaltung, Dienstplanung, Finanzbuchhaltung und Zuschussverwaltung – mit Schnittstellen zu DATEV und OK.FIS, optimal für bayerische Einrichtungen.",
+      "highlights": [
+        "Starke Finanzbuchhaltung & Zuschussverwaltung",
+        "Schnittstellen zu DATEV und OK.FIS",
+        "Rechtssicher, besonders für bayerische Träger"
+      ],
+      "scores": {
+        "stammdaten": 9,
+        "abrechnung": 9,
+        "eltern": 6,
+        "dienstplan": 8,
+        "doku": 6,
+        "anwesenheit": 8,
+        "datenschutz": 8,
+        "ux": 6,
+        "preis": 7
+      }
+    },
+    {
+      "id": "kitalino",
+      "name": "KITALINO",
+      "anbieter": "KITALINO",
+      "sitz": "Deutschland",
+      "modell": "Cloud / SaaS",
+      "empfehlung": false,
+      "kurzprofil": "Spezialist für pädagogische Entwicklungsdokumentation: rechtssichere Beobachtung und Dokumentation der Entwicklung (u. a. IFP-Bögen) per Tablet. Über die Partnerschaft mit AKDB/adebisKITA zur Gesamtlösung erweiterbar.",
+      "highlights": [
+        "Führend in pädagogischer Entwicklungsdokumentation",
+        "IFP-Bögen und Portfolios per Tablet",
+        "Integration mit adebisKITA (AKDB) möglich"
+      ],
+      "scores": {
+        "stammdaten": 7,
+        "abrechnung": 6,
+        "eltern": 8,
+        "dienstplan": 6,
+        "doku": 10,
+        "anwesenheit": 7,
+        "datenschutz": 9,
+        "ux": 8,
+        "preis": 8
+      }
+    },
+    {
+      "id": "careforkids",
+      "name": "CARE for kids",
+      "anbieter": "CARE for kids",
+      "sitz": "Deutschland",
+      "modell": "Cloud / SaaS",
+      "empfehlung": false,
+      "kurzprofil": "Etablierte Verwaltungslösung für Kitas mit solidem Funktionsumfang von Stammdaten über Abrechnung bis Dienstplanung.",
+      "highlights": [
+        "Solide, etablierte Kita-Verwaltung",
+        "Abrechnung und Dienstplanung integriert",
+        "Bewährt im Praxiseinsatz"
+      ],
+      "scores": {
+        "stammdaten": 8,
+        "abrechnung": 8,
+        "eltern": 7,
+        "dienstplan": 7,
+        "doku": 6,
+        "anwesenheit": 7,
+        "datenschutz": 8,
+        "ux": 7,
+        "preis": 7
+      }
+    },
+    {
+      "id": "littlebird",
+      "name": "LITTLE BIRD",
+      "anbieter": "LITTLE BIRD GmbH",
+      "sitz": "Deutschland",
+      "modell": "Cloud / Portal",
+      "empfehlung": false,
+      "kurzprofil": "Marktführer bei Platzvergabe, Organisation und Kommunikation mit Software und Familienportal in rund 600 Kommunen. Stärke im Anmelde- und Platzmanagement, weniger als internes Rundum-Verwaltungstool ausgelegt.",
+      "highlights": [
+        "Marktführer bei Platzvergabe & Familienportal",
+        "In rund 600 Kommunen im Einsatz",
+        "Starke Anmelde- und Kommunikationsprozesse"
+      ],
+      "scores": {
+        "stammdaten": 7,
+        "abrechnung": 6,
+        "eltern": 7,
+        "dienstplan": 5,
+        "doku": 5,
+        "anwesenheit": 6,
+        "datenschutz": 8,
+        "ux": 7,
+        "preis": 7
+      }
+    }
+  ]
+}

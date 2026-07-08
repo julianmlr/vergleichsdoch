@@ -3,24 +3,34 @@
 Unabhängige Software-Vergleiche nach Kategorien. Jede Kategorie wird nach einer
 transparenten, gewichteten Methodik bewertet (Score 0–100).
 
-**Erste Kategorie:** Arbeitsmedizinische Software (2026) · Testsieger: **ClarityTec** (94,1/100)
+**Online-Vergleiche (Stand Juli 2026):**
+- Arbeitsmedizinische Software · Testsieger: **ClarityTec** (94,1/100)
+- Meta-Suchmaschinen für Immobilien · Testsieger: **AreaOne** (93,0/100)
+- Kita-Verwaltungssoftware · Testsieger: **KigaRoo** (89,8/100, objektiv ermittelt)
 
 ## Projektstruktur
 
 ```
 .
-├── index.html                                  Startseite / Kategorienübersicht
+├── index.html                                    Startseite / Kategorienübersicht
 ├── kategorien/
-│   └── arbeitsmedizinische-software.html        Vergleichsseite Arbeitsmedizin
+│   ├── arbeitsmedizinische-software.html          Vergleich Arbeitsmedizin
+│   ├── immobilien-metasuchmaschinen.html          Vergleich Immobilien-Meta-Suche
+│   └── kita-verwaltungssoftware.html              Vergleich Kita-Verwaltung
 ├── assets/
-│   ├── css/styles.css                           Gemeinsames Stylesheet (CSS-Variablen)
-│   └── js/main.js                               Heatmap-Einfärbung der Detailtabelle
+│   ├── css/styles.css                             Gemeinsames Stylesheet (CSS-Variablen)
+│   └── js/main.js                                 Heatmap-Einfärbung der Detailtabelle
 ├── data/
-│   └── arbeitsmedizinische-software.json         Strukturierte Daten (Source of Truth)
+│   ├── arbeitsmedizinische-software.json           Strukturierte Daten (Source of Truth)
+│   ├── immobilien-metasuchmaschinen.json
+│   └── kita-verwaltungssoftware.json
 ├── analyse/
-│   └── arbeitsmedizinische-software.md           Ausführliche Analyse & Methodik
+│   ├── arbeitsmedizinische-software.md             Ausführliche Analyse & Methodik
+│   ├── immobilien-metasuchmaschinen.md
+│   └── kita-verwaltungssoftware.md
 └── design/
-    └── claude-design-prompt.md                   Fertiger Prompt für Claude Design
+    ├── claude-design-prompt.md                     Basis-Prompt für Claude Design
+    └── claude-design-prompt-update.md              Update: 2 neue Vergleiche
 ```
 
 ## Ansehen
