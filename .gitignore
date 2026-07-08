@@ -1,0 +1,9 @@
+# Node / lokale Tooling-Artefakte (nur für lokale Screenshots verwendet)
+node_modules/
+package.json
+package-lock.json
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.log

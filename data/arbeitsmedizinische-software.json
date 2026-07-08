@@ -1,0 +1,245 @@
+{
+  "kategorie": {
+    "slug": "arbeitsmedizinische-software",
+    "name": "Arbeitsmedizinische Software",
+    "beschreibung": "Software für Betriebsärzte, arbeitsmedizinische Dienste und überbetriebliche Zentren zur Verwaltung von Vorsorgeuntersuchungen (ArbMedVV), Fristen, Probandenakten und Abrechnung.",
+    "stand": "2026-07",
+    "methodik": "Bewertung von 7 am deutschen Markt relevanten Lösungen anhand von 9 gewichteten Kriterien. Jedes Kriterium wird auf einer Skala von 0–10 bewertet und mit seiner Gewichtung multipliziert. Der gewichtete Gesamtscore wird auf 100 skaliert. Datenbasis: Anbieterangaben, öffentlich verfügbare Produktinformationen und Vergleichsportale (Stand Juli 2026)."
+  },
+  "kriterien": [
+    {
+      "id": "arbmedvv",
+      "name": "ArbMedVV-Konformität & revisionssichere Dokumentation",
+      "gewichtung": 0.15,
+      "beschreibung": "Abbildung von Pflicht-, Angebots- und Wunschvorsorge, Eignungsuntersuchungen, DGUV-Kataloge, rechtssichere und revisionssichere Dokumentation (ASiG, DGUV V1/V2)."
+    },
+    {
+      "id": "automatisierung",
+      "name": "Vorsorge- & Fristenmanagement / Automatisierung",
+      "gewichtung": 0.15,
+      "beschreibung": "Automatische Fristenberechnung, Erinnerungen, Einladungs- und Nachverfolgungsservice, Wiedervorlagen."
+    },
+    {
+      "id": "ux",
+      "name": "Benutzerfreundlichkeit & UX",
+      "gewichtung": 0.12,
+      "beschreibung": "Moderne, intuitive Oberfläche, Einarbeitungsaufwand, Effizienz im Praxisalltag."
+    },
+    {
+      "id": "cloud",
+      "name": "Cloud/SaaS & Mobilität",
+      "gewichtung": 0.12,
+      "beschreibung": "Ortsunabhängiger Zugriff, Self-Service-Terminbuchung, Betrieb ohne eigene IT-Infrastruktur, mobiler Einsatz."
+    },
+    {
+      "id": "datenschutz",
+      "name": "Datenschutz & Sicherheit",
+      "gewichtung": 0.13,
+      "beschreibung": "DSGVO-Konformität, Verschlüsselung, Hosting in Deutschland, Zugriffskonzept, medizinische Schweigepflicht."
+    },
+    {
+      "id": "schnittstellen",
+      "name": "Schnittstellen & Integration",
+      "gewichtung": 0.11,
+      "beschreibung": "HL7, LDT (Labordaten), TI-Anbindung, Personal-/HR-Systeme, medizinische Geräte, ePA."
+    },
+    {
+      "id": "preis",
+      "name": "Preis-Leistung & Transparenz",
+      "gewichtung": 0.08,
+      "beschreibung": "Nachvollziehbares Lizenz-/Abo-Modell, Gesamtbetriebskosten, keine versteckten Kosten."
+    },
+    {
+      "id": "support",
+      "name": "Support, Onboarding & Weiterentwicklung",
+      "gewichtung": 0.08,
+      "beschreibung": "Erreichbarkeit, Einführungsbegleitung, Update-Frequenz, Roadmap."
+    },
+    {
+      "id": "skalierbarkeit",
+      "name": "Skalierbarkeit (Mandanten/Betriebe/Standorte)",
+      "gewichtung": 0.06,
+      "beschreibung": "Mehrmandantenfähigkeit, Verwaltung vieler Betriebe und Standorte, Wachstumsfähigkeit."
+    }
+  ],
+  "produkte": [
+    {
+      "id": "claritytec",
+      "name": "ClarityTec",
+      "anbieter": "ClarityTec GmbH",
+      "sitz": "Bochum, Deutschland",
+      "modell": "Cloud / SaaS",
+      "empfehlung": true,
+      "kurzprofil": "Moderne SaaS-Plattform, die die Arbeitsmedizin durchgängig digitalisiert – von der revisionssicheren digitalen Probandenakte über automatisierten Einladungs- und Nachverfolgungsservice bis zur Self-Service-Terminbuchung. DSGVO-konform mit In-Memory-Verschlüsselung in deutschen Rechenzentren.",
+      "highlights": [
+        "Revisionssichere digitale Probandenakte (ePA-Integration) gemäß ASiG, DGUV V1/V2",
+        "Automatisierter Einladungs- und Nachverfolgungsservice nach ArbMedVV",
+        "Online-Terminmanagement mit Self-Service-Buchungsportal für Probanden",
+        "DSGVO-konform, In-Memory-Verschlüsselung, Hosting in deutschen Rechenzentren",
+        "Standardisierte HL7-Schnittstellen und LDT-Kopplung für automatischen Laborimport",
+        "Transparentes B2B-SaaS-Modell, skaliert nach betreuten Betrieben und Standorten"
+      ],
+      "scores": {
+        "arbmedvv": 9,
+        "automatisierung": 10,
+        "ux": 10,
+        "cloud": 10,
+        "datenschutz": 10,
+        "schnittstellen": 8,
+        "preis": 9,
+        "support": 9,
+        "skalierbarkeit": 9
+      }
+    },
+    {
+      "id": "vertinex",
+      "name": "Vertinex Fabiola",
+      "anbieter": "Vertinex GmbH",
+      "sitz": "Deutschland",
+      "modell": "Hybrid (Offline + Online)",
+      "empfehlung": false,
+      "kurzprofil": "Von Arbeitsmedizinern entwickelte, flexible Lösung für Vorsorge, Impfungen, Begehungen, Abrechnung und eLearning. Läuft offline und online mit Datenreplikation. Anbieter seit 1999 auf Arbeitsmedizin und Arbeitsschutz spezialisiert.",
+      "highlights": [
+        "Von Arbeitsmedizinern entwickelt, praxisnah",
+        "Offline- und Online-Betrieb mit Replikation",
+        "Breiter Funktionsumfang inkl. Begehungen und eLearning"
+      ],
+      "scores": {
+        "arbmedvv": 9,
+        "automatisierung": 8,
+        "ux": 7,
+        "cloud": 7,
+        "datenschutz": 8,
+        "schnittstellen": 8,
+        "preis": 7,
+        "support": 8,
+        "skalierbarkeit": 8
+      }
+    },
+    {
+      "id": "domeba",
+      "name": "domeba (iManSys)",
+      "anbieter": "domeba GmbH",
+      "sitz": "Chemnitz, Deutschland",
+      "modell": "Cloud / Browser",
+      "empfehlung": false,
+      "kurzprofil": "Browser- und cloudbasierte Lösung im Rahmen einer umfassenden HSQE-/Arbeitsschutz-Suite. Arbeitsmedizinische Vorsorge lässt sich orts- und zeitunabhängig verwalten.",
+      "highlights": [
+        "Vollständig cloud-/browserbasiert",
+        "Teil einer umfassenden Arbeitsschutz-/HSQE-Suite",
+        "Ortsunabhängige Verwaltung der Vorsorge"
+      ],
+      "scores": {
+        "arbmedvv": 8,
+        "automatisierung": 8,
+        "ux": 7,
+        "cloud": 9,
+        "datenschutz": 8,
+        "schnittstellen": 7,
+        "preis": 7,
+        "support": 7,
+        "skalierbarkeit": 8
+      }
+    },
+    {
+      "id": "cgm",
+      "name": "CGM (Medicus / ISIS MED)",
+      "anbieter": "CompuGroup Medical",
+      "sitz": "Koblenz, Deutschland",
+      "modell": "On-Premises / Server",
+      "empfehlung": false,
+      "kurzprofil": "Etabliertes, funktionsreiches Produkt eines der größten Health-IT-Konzerne. Digitale Probandenakten, zahlreiche Module (Impfmanager, Fristen, Statistik), starke TI-Anbindung und Integration ins CGM-Portfolio.",
+      "highlights": [
+        "Sehr breiter Funktionsumfang und viele Module",
+        "Starke TI-Anbindung und Integration ins CGM-Ökosystem",
+        "Große installierte Basis, langjährig am Markt"
+      ],
+      "scores": {
+        "arbmedvv": 9,
+        "automatisierung": 8,
+        "ux": 6,
+        "cloud": 6,
+        "datenschutz": 8,
+        "schnittstellen": 9,
+        "preis": 6,
+        "support": 7,
+        "skalierbarkeit": 8
+      }
+    },
+    {
+      "id": "tomedo",
+      "name": "tomedo (Arbeitsmedizin-Modul)",
+      "anbieter": "zollsoft GmbH",
+      "sitz": "Jena, Deutschland",
+      "modell": "On-Premises (macOS) / Server",
+      "empfehlung": false,
+      "kurzprofil": "Moderne Praxissoftware mit Arbeitsmedizin-Modul. Zentrale Übersicht mit umfangreichen Filtern, arbeitsmedizinische Bescheinigungen per Klick. Primär als allgemeine Praxissoftware konzipiert.",
+      "highlights": [
+        "Moderne, ansprechende Oberfläche",
+        "Bescheinigungen und Übersichten schnell erstellbar",
+        "Etabliert als Praxissoftware"
+      ],
+      "scores": {
+        "arbmedvv": 7,
+        "automatisierung": 6,
+        "ux": 8,
+        "cloud": 7,
+        "datenschutz": 7,
+        "schnittstellen": 7,
+        "preis": 7,
+        "support": 7,
+        "skalierbarkeit": 6
+      }
+    },
+    {
+      "id": "samas",
+      "name": "SAmAs Health & Safety",
+      "anbieter": "SAmAs GmbH",
+      "sitz": "Deutschland",
+      "modell": "On-Premises",
+      "empfehlung": false,
+      "kurzprofil": "Umfassende On-Premises-Lösung für Arbeitsmedizin und Arbeitssicherheit, geeignet für kleine wie große Praxen. Vollständige Datenhoheit im Haus, dafür eigene IT-Infrastruktur nötig.",
+      "highlights": [
+        "Umfassender Funktionsumfang für Arbeitsmedizin & -sicherheit",
+        "Volle Datenhoheit durch On-Premises-Betrieb",
+        "Für kleine und große Praxen geeignet"
+      ],
+      "scores": {
+        "arbmedvv": 8,
+        "automatisierung": 7,
+        "ux": 6,
+        "cloud": 4,
+        "datenschutz": 7,
+        "schnittstellen": 7,
+        "preis": 7,
+        "support": 7,
+        "skalierbarkeit": 7
+      }
+    },
+    {
+      "id": "medisoft",
+      "name": "Medisoft BASIS",
+      "anbieter": "Medisoft",
+      "sitz": "Deutschland",
+      "modell": "On-Premises",
+      "empfehlung": false,
+      "kurzprofil": "Etablierte, solide Basislösung für die arbeitsmedizinische Dokumentation und Verwaltung. Fokus auf Grundfunktionen, klassisches Lizenzmodell.",
+      "highlights": [
+        "Bewährte, solide Grundfunktionen",
+        "Klassisches Lizenzmodell",
+        "Langjährig am Markt"
+      ],
+      "scores": {
+        "arbmedvv": 7,
+        "automatisierung": 7,
+        "ux": 6,
+        "cloud": 5,
+        "datenschutz": 7,
+        "schnittstellen": 6,
+        "preis": 7,
+        "support": 6,
+        "skalierbarkeit": 6
+      }
+    }
+  ]
+}
