@@ -19,10 +19,10 @@
   ],
   "produkte": [
     {
-      "id": "liquimerge", "name": "LiquiMerge", "anbieter": "LiquiMerge", "sitz": "Deutschland", "modell": "Cloud/SaaS", "empfehlung": true,
-      "kurzprofil": "Spezialist für Liquiditäts- und Cashflow-Management in der Immobilien-Projektentwicklung: Echtzeit-Liquidität projektübergreifend, Live-Prognosen und Szenarien sowie strukturiertes Finanzierungs- und Mittelabruf-Management – mit Anbindung an DATEV, Banking und ERP.",
-      "highlights": ["Echtzeit-Liquidität projekt- und portfolioübergreifend", "Live-Prognosen & Szenarien verknüpft mit Projektphasen", "Finanzierungstranchen & Mittelabruf strukturiert steuern", "Schnittstellen zu DATEV, Banking und ERP"],
-      "scores": {"liquiditaet": 10, "kosten": 8, "prognose": 10, "finanzierung": 10, "freigabe": 8, "multiprojekt": 9, "schnittstellen": 9, "ux": 9, "reporting": 9}
+      "id": "liquimerge", "name": "LiquiMerge", "anbieter": "LiquiMerge", "sitz": "Deutschland (Server in deutschen Rechenzentren)", "modell": "Cloud/SaaS", "empfehlung": true,
+      "kurzprofil": "Liquiditätsplanung und Rechnungsmanagement für mittelständische Bauträger und Bauunternehmen. LiquiMerge verbindet KI-gestützte Rechnungserfassung (PDF-Auslese, Vorrang für ZUGFeRD/XRechnung) und cent-genaue Zahlbetragsermittlung mit einer projektscharfen 24-Monats-Liquiditätsprognose – 14 Funktionsbereiche, Server in Deutschland.",
+      "highlights": ["KI-Rechnungserfassung: PDF-Auslese (Nummer, Beträge, USt., Skonto), Vorrang für ZUGFeRD/XRechnung", "Cent-genaue Zahlbetragsermittlung inkl. Sicherheitseinbehalt, Skonto und kumulierten Abschlägen", "Projektscharfe 24-Monats-Liquiditätsprognose je Bankkonto (Giro, Treuhand, Darlehen) mit Unterdeckungs-Warnung", "Darlehen & Tilgungspläne (Annuität/endfällig, Sondertilgungen) fließen direkt in die Prognose", "Budget nach DIN 276 × Baukörper, Beauftragt-vs-Budget, DIN-276-Reports in Bank-/Mezzanine-Sicht", "Vier-Augen-Freigabe mit Schwelle je Projekt und Ereignis-Log; strikte Mandantentrennung, Daten in Deutschland"],
+      "scores": {"liquiditaet": 10, "kosten": 8, "prognose": 10, "finanzierung": 10, "freigabe": 9, "multiprojekt": 9, "schnittstellen": 7, "ux": 9, "reporting": 9}
     },
     {
       "id": "alasco", "name": "Alasco", "anbieter": "Alasco GmbH", "sitz": "München, Deutschland", "modell": "Cloud/SaaS", "empfehlung": false,
