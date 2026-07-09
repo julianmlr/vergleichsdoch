@@ -104,6 +104,7 @@ def footer(home_href, cat_links=True):
 '            <a class="vd-foot-link" href="kategorien/arbeitsmedizinische-software.html" style="color:rgba(255,255,255,.72);">Arbeitsmedizinische Software</a>\n'
 '            <a class="vd-foot-link" href="kategorien/arbeitsschutz-management.html" style="color:rgba(255,255,255,.72);">Arbeitsschutz-Management</a>\n'
 '            <a class="vd-foot-link" href="kategorien/immobilien-metasuchmaschinen.html" style="color:rgba(255,255,255,.72);">Meta-Suche Immobilien</a>\n'
+'            <a class="vd-foot-link" href="kategorien/immobilienprojekte-software.html" style="color:rgba(255,255,255,.72);">Software für Immobilienprojekte</a>\n'
 '            <a class="vd-foot-link" href="kategorien/kita-verwaltungssoftware.html" style="color:rgba(255,255,255,.72);">Kita-Verwaltungssoftware</a>\n'
 '          </div>')
     return (
@@ -375,6 +376,9 @@ ICON = {
  'scale':'<svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M7.5 20h9M4 8h16M9 4.8 4 8l-2 4a3 3 0 0 0 6 0L6 8"/><path d="M15 4.8 20 8l2 4a3 3 0 0 1-6 0l2-4"/></svg>',
  'shieldcheck':'<svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 5.7v5c0 4.3 2.9 7.6 7 8.8 4.1-1.2 7-4.5 7-8.8v-5z"/><path d="m9 11.5 2 2 4-4"/></svg>',
  'chart':'<svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21h14"/><path d="M7 21v-6M12 21V9M17 21v-10"/></svg>',
+ 'droplet':'<svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11z"/><path d="M9.4 13.8a2.6 2.6 0 0 0 2.6 2.6"/></svg>',
+ 'trend':'<svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17 10 11l3 3 7-7.5"/><path d="M20 6.5V11h-4.5"/><path d="M4 20h16"/></svg>',
+ 'euro':'<svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.6a4 4 0 1 0 0 6.8"/><path d="M6.8 10.6h6M6.8 13.4h5"/></svg>',
 }
 
 ARBMED = dict(
@@ -558,12 +562,57 @@ ARBSCHUTZ = dict(
  ],
 )
 
+IMMOPROJ = dict(
+ slug='immobilienprojekte-software', screen='Immobilienprojekte-Vergleich',
+ title='Software für Immobilienprojekte im Vergleich 2026 – Testsieger LiquiMerge | vergleichsdoch',
+ desc='6 Tools für die finanzielle Steuerung von Immobilienprojekten im Vergleich: Liquidität, Kostencontrolling (DIN 276), Prognosen und Finanzierung. Testsieger 2026: LiquiMerge (91,5/100).',
+ schema_name='Software für Immobilienprojekte im Vergleich 2026',
+ breadcrumb='Software für Immobilienprojekte',
+ h1='Software für Immobilienprojekte im Vergleich',
+ lead='Tools für die finanzielle Steuerung von Immobilien-Projektentwicklungen – von Liquiditäts- und Cashflow-Management über Kostencontrolling nach DIN 276 bis Prognosen, Finanzierung und Freigabe-Workflows. Bewertet nach neun gewichteten Kriterien.',
+ deploy_col='Bereitstellung',
+ ts_name='LiquiMerge', ts_vendor_line='LiquiMerge · Cloud/SaaS für Immobilienprojekte',
+ ts_blurb='Spezialist für Liquiditäts- und Cashflow-Management in der Immobilien-Projektentwicklung – mit Echtzeit-Liquidität, Live-Prognosen und strukturiertem Finanzierungs- und Mittelabruf-Management.',
+ ts_tags=['Echtzeit-Liquidität','Live-Prognosen','Mittelabruf &amp; Finanzierung','DATEV &amp; Banking'],
+ why_sub='Vier Stärken heben LiquiMerge vom Feld ab.',
+ why=[
+  dict(icon=ICON['droplet'], score='10 / 10', title='Liquidität &amp; Cashflow', text='Projektliquidität in Echtzeit im Blick – projektübergreifend und tagesaktuell.'),
+  dict(icon=ICON['trend'], score='10 / 10', title='Live-Prognosen &amp; Szenarien', text='Laufende Forecasts und Szenarien, direkt verknüpft mit Projektphasen und Verträgen.'),
+  dict(icon=ICON['euro'], score='10 / 10', title='Finanzierung &amp; Mittelabruf', text='Finanzierungstranchen und Mittelabrufe strukturiert steuern und überwachen.'),
+  dict(icon=ICON['nodes'], score='9 / 10', title='Integrationen &amp; Multiprojekt', text='Anbindung an DATEV, Banking und ERP – über das gesamte Projektportfolio hinweg.'),
+ ],
+ meth_intro='Jedes Produkt wird in neun Kriterien auf einer Skala von 0–10 bewertet. Die Einzelwerte werden nach ihrer Bedeutung für die finanzielle Steuerung von Immobilienprojekten gewichtet und zu einem Gesamt-Score von 0–100 verrechnet.',
+ meth_note='Die Gewichte summieren sich auf 100 %. Liquiditäts-/Cashflow-Management und Kostencontrolling erhalten das höchste Gewicht.',
+ rec_main='Für die finanzielle Steuerung von Immobilienprojekten mit Fokus auf Liquidität ist <span style="color:#f2c85a;font-weight:800;">LiquiMerge</span> die stärkste Wahl – Echtzeit-Liquidität, Live-Prognosen und Mittelabruf-Management in einem Tool.',
+ rec_sub='Wer den Schwerpunkt auf breites Baukosten-Controlling legt, findet in <strong style="color:#fff;font-weight:700;">Alasco</strong> und <strong style="color:#fff;font-weight:700;">PROBIS</strong> sehr starke Alternativen; für reine Liquiditätsplanung ist <strong style="color:#fff;font-weight:700;">Agicap</strong> einen Blick wert.',
+ products=[
+  dict(name='LiquiMerge', short='LiquiMerge', vendor='', deploy='Cloud/SaaS', score=91.5, blurb='Testsieger. Spezialist für Liquiditäts- und Cashflow-Management in Immobilienprojekten – Spitzenwerte bei Liquidität, Prognosen und Finanzierung/Mittelabruf (je 10/10).'),
+  dict(name='Alasco', short='Alasco', vendor='Alasco GmbH', deploy='Cloud/SaaS', score=86.3, blurb='Führende Finanzmanagement-Plattform mit sehr starkem Kostencontrolling (10/10, DIN 276) und digitalen Freigabe-Workflows (10/10).'),
+  dict(name='PROBIS', short='PROBIS', vendor='emproc GmbH', deploy='Cloud/SaaS', score=81.1, blurb='Cloudbasiertes Projektcontrolling mit stärkstem Multiprojekt-/Portfolio-Controlling im Test (10/10) und solider Kosten-/Erlösrechnung.'),
+  dict(name='Agicap', short='Agicap', vendor='Agicap', deploy='Cloud/SaaS', score=73.6, blurb='Starke, breit einsetzbare Liquiditätsplanung (9/10) mit guten Banking-Schnittstellen; weniger immobilienspezifisch bei Kosten und Freigaben.'),
+  dict(name='metamagix', short='metamagix', vendor='metamagix', deploy='Cloud/SaaS', score=70.5, blurb='Auf die Immobilienwirtschaft ausgerichtetes Liquiditätsmanagement mit ausgewogenem Profil im mittleren Bereich.'),
+  dict(name='IMKE', short='IMKE', vendor='IMKE', deploy='Cloud / On-Premises', score=64.3, blurb='Bauträger-Software mit integrierter Liquiditätsplanung; solide Grundfunktionen, aber weniger Tiefe im projektbezogenen Controlling.'),
+ ],
+ criteria=[
+  dict(label='Liquidität & Cashflow', weight=16, scores=[10,7,7,9,8,7]),
+  dict(label='Kostencontrolling (DIN 276)', weight=15, scores=[8,10,9,6,7,7]),
+  dict(label='Prognosen & Szenarien', weight=13, scores=[10,9,8,8,7,6]),
+  dict(label='Finanzierung & Mittelabruf', weight=12, scores=[10,8,8,7,7,7]),
+  dict(label='Freigabe-Workflows', weight=11, scores=[8,10,8,6,6,6]),
+  dict(label='Multiprojekt-Controlling', weight=10, scores=[9,8,10,7,7,6]),
+  dict(label='Schnittstellen', weight=9, scores=[9,8,8,8,7,6]),
+  dict(label='Benutzerfreundlichkeit', weight=8, scores=[9,9,7,8,7,6]),
+  dict(label='Reporting & Dashboards', weight=6, scores=[9,9,8,7,7,6]),
+ ],
+)
+
 # ---------------- HOME ----------------
 CAT_ICON = {
  'med':'<svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2.5"/><path d="M9.2 4h5.6v2.1a1 1 0 0 1-1 1h-3.6a1 1 0 0 1-1-1z"/><path d="M12 11v5M9.5 13.5h5"/></svg>',
  'house':'<svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 11.5 12 4.5l8.5 7"/><path d="M5.5 10.2V19.5h13V10.2"/><rect x="10" y="14" width="4" height="5.5"/></svg>',
  'kita':'<svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="13" width="7" height="7" rx="1.3"/><rect x="13" y="13" width="7" height="7" rx="1.3"/><path d="M8.4 11 12 4.3 15.6 11z"/></svg>',
  'arbschutz':'<svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 5.7v5c0 4.3 2.9 7.6 7 8.8 4.1-1.2 7-4.5 7-8.8v-5z"/><path d="m9 11.5 2 2 4-4"/></svg>',
+ 'immoproj':'<svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#0b5cab" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="7" width="8.5" height="13" rx="1.2"/><path d="M12.5 11H19a1 1 0 0 1 1 1v8h-7.5"/><path d="M6.7 10h3M6.7 13h3M6.7 16h3M15.5 14h1.5M15.5 17h1.5"/></svg>',
 }
 
 def cat_card(href, icon, ts, h3, p, count):
@@ -582,7 +631,7 @@ def cat_card(href, icon, ts, h3, p, count):
 def build_home():
     schema = '{"@context":"https://schema.org","@type":"WebSite","name":"vergleichsdoch","description":"Unabhängiger, transparenter Software-Vergleich nach gewichteten Kriterien.","inLanguage":"de-DE"}'
     H = head('vergleichsdoch – Software transparent vergleichen, ohne Marketing-Nebel',
-             'vergleichsdoch bewertet Fachsoftware unabhängig und transparent nach gewichteten Kriterien – begründet und ohne bezahlte Platzierungen. Vier Vergleiche sind online: Arbeitsmedizin, Arbeitsschutz, Immobilien-Meta-Suche und Kita-Verwaltung.',
+             'vergleichsdoch bewertet Fachsoftware unabhängig und transparent nach gewichteten Kriterien – begründet und ohne bezahlte Platzierungen. Fünf Vergleiche sind online: Arbeitsmedizin, Arbeitsschutz, Immobilien-Meta-Suche, Immobilienprojekte und Kita-Verwaltung.',
              schema, 'assets/css/site.css')
     # header (home variant)
     H += (
@@ -641,12 +690,13 @@ def build_home():
 '      <div style="max-width:640px;">\n'
 '        <div style="font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0f9d8c;">Kategorien</div>\n'
 '        <h2 style="margin-top:14px;font-size:clamp(28px,4vw,44px);line-height:1.08;letter-spacing:-.022em;font-weight:800;color:#16202e;">Vergleiche, die Entscheidungen tragen</h2>\n'
-'        <p style="margin-top:16px;font-size:clamp(16px,1.4vw,18.5px);line-height:1.6;color:#546174;">Vier Vergleiche sind online. Weitere folgen. Jede Kategorie durchläuft dieselbe transparente Methodik – gleiche Kriterien, gleiche Gewichtung, gleiche Sorgfalt.</p>\n      </div>\n'
-'      <div style="margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px;">\n%s%s%s%s      </div>\n    </div>\n  </section>\n'
+'        <p style="margin-top:16px;font-size:clamp(16px,1.4vw,18.5px);line-height:1.6;color:#546174;">Fünf Vergleiche sind online. Weitere folgen. Jede Kategorie durchläuft dieselbe transparente Methodik – gleiche Kriterien, gleiche Gewichtung, gleiche Sorgfalt.</p>\n      </div>\n'
+'      <div style="margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px;">\n%s%s%s%s%s      </div>\n    </div>\n  </section>\n'
 ) % (
  cat_card('kategorien/arbeitsmedizinische-software.html', CAT_ICON['med'], 'ClarityTec', 'Arbeitsmedizinische Software', 'Software für Betriebsärzte und arbeitsmedizinische Dienste – Vorsorge, Dokumentation nach ArbMedVV und Terminmanagement.', 7),
  cat_card('kategorien/arbeitsschutz-management.html', CAT_ICON['arbschutz'], 'Quentic', 'Arbeitsschutz-Management', 'EHS-Software für Arbeitssicherheit – Gefährdungsbeurteilung, Unterweisungen, Gefahrstoffe, Rechtskataster und Audits.', 7),
  cat_card('kategorien/immobilien-metasuchmaschinen.html', CAT_ICON['house'], 'AreaOne', 'Meta-Suchmaschinen für Immobilien', 'Meta-Suchmaschinen durchsuchen viele Immobilienportale gleichzeitig – bewertet nach KI-Matching, Lage-Intelligenz und mehr.', 6),
+ cat_card('kategorien/immobilienprojekte-software.html', CAT_ICON['immoproj'], 'LiquiMerge', 'Software für Immobilienprojekte', 'Finanzielle Steuerung von Projektentwicklungen – Liquidität, Cashflow, Kostencontrolling (DIN 276), Prognosen und Finanzierung.', 6),
  cat_card('kategorien/kita-verwaltungssoftware.html', CAT_ICON['kita'], 'KigaRoo', 'Kita-Verwaltungssoftware', 'Software für Kitas und Träger – Stammdaten, Beitragsabrechnung, Dienstpläne und integrierte Eltern-App.', 7),
 )
     # methodik (dark)
@@ -678,6 +728,6 @@ def build_home():
 
 # ---------------- WRITE ----------------
 open(os.path.join(ROOT, 'index.html'), 'w').write(build_home())
-for cfg in (ARBMED, IMMO, KITA, ARBSCHUTZ):
+for cfg in (ARBMED, IMMO, KITA, ARBSCHUTZ, IMMOPROJ):
     open(os.path.join(ROOT, 'kategorien', cfg['slug'] + '.html'), 'w').write(build_category(cfg))
 print("generated: index.html + 3 category pages")
