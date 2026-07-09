@@ -1,0 +1,58 @@
+{
+  "kategorie": {
+    "slug": "immobilienprojekte-software",
+    "name": "Software für Immobilienprojekte",
+    "beschreibung": "Software für die finanzielle Steuerung von Immobilien-Projektentwicklungen: Liquiditäts- und Cashflow-Management, Kostencontrolling (DIN 276), Prognosen, Finanzierung/Mittelabruf und Freigabe-Workflows.",
+    "stand": "2026-07",
+    "methodik": "Bewertung von 6 am DACH-Markt relevanten Lösungen anhand von 9 gewichteten Kriterien (Skala 0–10, gewichtet, auf 100 skaliert). Datenbasis: Anbieterangaben und öffentlich verfügbare Informationen (Stand Juli 2026)."
+  },
+  "kriterien": [
+    {"id": "liquiditaet", "name": "Liquiditäts- & Cashflow-Management", "gewichtung": 0.16, "beschreibung": "Projektliquidität in Echtzeit, Cashflow-Planung projekt- und portfolioübergreifend."},
+    {"id": "kosten", "name": "Kostencontrolling & Budget (DIN 276)", "gewichtung": 0.15, "beschreibung": "Budgetverfolgung, Kostengruppen nach DIN 276, Nachträge, Soll-Ist."},
+    {"id": "prognose", "name": "Prognosen & Szenarien (Live-Forecast)", "gewichtung": 0.13, "beschreibung": "Laufende Forecasts, Szenarien, Verknüpfung mit Projektphasen und Verträgen."},
+    {"id": "finanzierung", "name": "Finanzierung & Mittelabruf", "gewichtung": 0.12, "beschreibung": "Finanzierungstranchen, Mittelabrufe, Eigen-/Fremdkapital-Steuerung."},
+    {"id": "freigabe", "name": "Rechnungs- & Freigabe-Workflows", "gewichtung": 0.11, "beschreibung": "Digitale Rechnungsprüfung, Freigaben nach Rolle/Betrag, Nachtragsfreigaben."},
+    {"id": "multiprojekt", "name": "Multiprojekt- & Portfolio-Controlling", "gewichtung": 0.10, "beschreibung": "Übergreifende Auswertung vieler Projekte, Portfolio-Sicht, Benchmarks."},
+    {"id": "schnittstellen", "name": "Schnittstellen (DATEV, Banking, ERP)", "gewichtung": 0.09, "beschreibung": "Anbindung an Buchhaltung/DATEV, Banking, ERP und Excel."},
+    {"id": "ux", "name": "Benutzerfreundlichkeit & Cloud", "gewichtung": 0.08, "beschreibung": "Moderne Oberfläche, Kollaboration, cloudbasierter Zugriff."},
+    {"id": "reporting", "name": "Reporting & Dashboards", "gewichtung": 0.06, "beschreibung": "Aussagekräftige Auswertungen und Dashboards für Investoren und Banken."}
+  ],
+  "produkte": [
+    {
+      "id": "liquimerge", "name": "LiquiMerge", "anbieter": "LiquiMerge", "sitz": "Deutschland", "modell": "Cloud/SaaS", "empfehlung": true,
+      "kurzprofil": "Spezialist für Liquiditäts- und Cashflow-Management in der Immobilien-Projektentwicklung: Echtzeit-Liquidität projektübergreifend, Live-Prognosen und Szenarien sowie strukturiertes Finanzierungs- und Mittelabruf-Management – mit Anbindung an DATEV, Banking und ERP.",
+      "highlights": ["Echtzeit-Liquidität projekt- und portfolioübergreifend", "Live-Prognosen & Szenarien verknüpft mit Projektphasen", "Finanzierungstranchen & Mittelabruf strukturiert steuern", "Schnittstellen zu DATEV, Banking und ERP"],
+      "scores": {"liquiditaet": 10, "kosten": 8, "prognose": 10, "finanzierung": 10, "freigabe": 8, "multiprojekt": 9, "schnittstellen": 9, "ux": 9, "reporting": 9}
+    },
+    {
+      "id": "alasco", "name": "Alasco", "anbieter": "Alasco GmbH", "sitz": "München, Deutschland", "modell": "Cloud/SaaS", "empfehlung": false,
+      "kurzprofil": "Führende Finanzmanagement-Plattform für Immobilienprojekte mit sehr starkem Kostencontrolling (DIN 276), digitalisierten Freigabe-Workflows und Echtzeit-Verfolgung von Budgets, Kosten und Finanzierung.",
+      "highlights": ["Sehr starkes Kostencontrolling (DIN 276)", "Vollständig digitale Freigabe-Workflows", "Echtzeit-Tracking von Budget, Kosten & Finanzierung"],
+      "scores": {"liquiditaet": 7, "kosten": 10, "prognose": 9, "finanzierung": 8, "freigabe": 10, "multiprojekt": 8, "schnittstellen": 8, "ux": 9, "reporting": 9}
+    },
+    {
+      "id": "probis", "name": "PROBIS", "anbieter": "emproc GmbH", "sitz": "Deutschland", "modell": "Cloud/SaaS", "empfehlung": false,
+      "kurzprofil": "Cloudbasiertes Projektcontrolling von der ersten Kosten-/Erlösrechnung über Multiprojekt-Controlling bis zur Finanzierungsüberwachung – mit N-dimensionaler Auswertung (DIN, TOTEX, Gesellschaft).",
+      "highlights": ["Stärkstes Multiprojekt-/Portfolio-Controlling", "Kosten- & Erlösrechnung, Finanzierungsüberwachung", "N-dimensionale Auswertung (DIN, TOTEX)"],
+      "scores": {"liquiditaet": 7, "kosten": 9, "prognose": 8, "finanzierung": 8, "freigabe": 8, "multiprojekt": 10, "schnittstellen": 8, "ux": 7, "reporting": 8}
+    },
+    {
+      "id": "agicap", "name": "Agicap", "anbieter": "Agicap", "sitz": "Frankreich/Deutschland", "modell": "Cloud/SaaS", "empfehlung": false,
+      "kurzprofil": "Starke, breit einsetzbare Liquiditätsplanung mit Immobilien-Ausrichtung und guten Banking-Schnittstellen; weniger immobilienspezifisch bei Kostencontrolling und Freigaben.",
+      "highlights": ["Starke reine Liquiditätsplanung", "Gute Banking-Schnittstellen", "Schnell einsatzbereit"],
+      "scores": {"liquiditaet": 9, "kosten": 6, "prognose": 8, "finanzierung": 7, "freigabe": 6, "multiprojekt": 7, "schnittstellen": 8, "ux": 8, "reporting": 7}
+    },
+    {
+      "id": "metamagix", "name": "metamagix", "anbieter": "metamagix", "sitz": "Österreich/Deutschland", "modell": "Cloud/SaaS", "empfehlung": false,
+      "kurzprofil": "Auf die Immobilienwirtschaft ausgerichtetes Liquiditätsmanagement mit ausgewogenem Funktionsprofil im mittleren Bereich.",
+      "highlights": ["Immobilien-fokussiertes Liquiditätsmanagement", "Ausgewogenes Funktionsprofil", "Cashflow auf Projekt- und Portfolioebene"],
+      "scores": {"liquiditaet": 8, "kosten": 7, "prognose": 7, "finanzierung": 7, "freigabe": 6, "multiprojekt": 7, "schnittstellen": 7, "ux": 7, "reporting": 7}
+    },
+    {
+      "id": "imke", "name": "IMKE", "anbieter": "IMKE", "sitz": "Deutschland", "modell": "Cloud / On-Premises", "empfehlung": false,
+      "kurzprofil": "Bauträger- und Immobilien-Software mit integrierter Liquiditätsplanung; solide Grundfunktionen, aber geringere Tiefe im projektbezogenen Controlling.",
+      "highlights": ["Bauträger-Software mit Liquiditätsplanung", "Solide Grundfunktionen", "Für kleinere Entwickler geeignet"],
+      "scores": {"liquiditaet": 7, "kosten": 7, "prognose": 6, "finanzierung": 7, "freigabe": 6, "multiprojekt": 6, "schnittstellen": 6, "ux": 6, "reporting": 6}
+    }
+  ]
+}

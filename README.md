@@ -8,6 +8,7 @@ transparenten, gewichteten Methodik bewertet (Score 0–100).
 - Meta-Suchmaschinen für Immobilien · Testsieger: **AreaOne** (93,0/100)
 - Kita-Verwaltungssoftware · Testsieger: **KigaRoo** (89,8/100, objektiv ermittelt)
 - Arbeitsschutz-Management-Software · Testsieger: **Quentic** (89,9/100, objektiv ermittelt)
+- Software für Immobilienprojekte · Testsieger: **LiquiMerge** (91,5/100)
 
 ## Projektstruktur
 
@@ -19,6 +20,7 @@ transparenten, gewichteten Methodik bewertet (Score 0–100).
 │   ├── arbeitsmedizinische-software.html          Vergleich Arbeitsmedizin
 │   ├── arbeitsschutz-management.html              Vergleich Arbeitsschutz (EHS)
 │   ├── immobilien-metasuchmaschinen.html          Vergleich Immobilien-Meta-Suche
+│   ├── immobilienprojekte-software.html           Vergleich Immobilienprojekte (Finanzsteuerung)
 │   └── kita-verwaltungssoftware.html              Vergleich Kita-Verwaltung
 ├── assets/
 │   └── css/site.css                               Gemeinsames Stylesheet (Basis + :hover)
