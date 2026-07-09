@@ -2,7 +2,7 @@
 
 **Kategorie:** Software für Immobilienprojekte (finanzielle Projektsteuerung)
 **Stand:** Juli 2026
-**Testsieger:** **LiquiMerge** (Gesamtscore 91,5 / 100)
+**Testsieger:** **LiquiMerge** (Gesamtscore 90,8 / 100)
 
 ---
 
@@ -44,7 +44,7 @@ schwersten, gefolgt von Prognosefähigkeit und Finanzierung.
 
 | Rang | Produkt | Anbieter | Modell | Score |
 |:---:|---------|----------|--------|:-----:|
-| 🥇 **1** | **LiquiMerge** | LiquiMerge | Cloud/SaaS | **91,5** |
+| 🥇 **1** | **LiquiMerge** | LiquiMerge | Cloud/SaaS | **90,8** |
 | 2 | Alasco | Alasco GmbH | Cloud/SaaS | 86,3 |
 | 3 | PROBIS | emproc GmbH | Cloud/SaaS | 81,1 |
 | 4 | Agicap | Agicap | Cloud/SaaS | 73,6 |
@@ -59,29 +59,38 @@ schwersten, gefolgt von Prognosefähigkeit und Finanzierung.
 | Kostencontrolling DIN 276 (15 %) | 8 | **10** | 9 | 6 | 7 | 7 |
 | Prognosen & Szenarien (13 %) | **10** | 9 | 8 | 8 | 7 | 6 |
 | Finanzierung & Mittelabruf (12 %) | **10** | 8 | 8 | 7 | 7 | 7 |
-| Freigabe-Workflows (11 %) | 8 | **10** | 8 | 6 | 6 | 6 |
+| Rechnungen & Freigaben (11 %) | 9 | **10** | 8 | 6 | 6 | 6 |
 | Multiprojekt-Controlling (10 %) | 9 | 8 | **10** | 7 | 7 | 6 |
-| Schnittstellen (9 %) | 9 | 8 | 8 | 8 | 7 | 6 |
+| Schnittstellen & Export (9 %) | 7 | 8 | 8 | 8 | 7 | 6 |
 | Benutzerfreundlichkeit (8 %) | 9 | 9 | 7 | 8 | 7 | 6 |
 | Reporting & Dashboards (6 %) | 9 | 9 | 8 | 7 | 7 | 6 |
-| **Gesamt (100)** | **91,5** | 86,3 | 81,1 | 73,6 | 70,5 | 64,3 |
+| **Gesamt (100)** | **90,8** | 86,3 | 81,1 | 73,6 | 70,5 | 64,3 |
 
 ## 5. Warum LiquiMerge Testsieger ist
 
-LiquiMerge gewinnt, weil es genau die **finanziell kritischste Dimension** der
-Projektentwicklung am besten beherrscht: die **Liquidität**.
+LiquiMerge ist auf **mittelständische Bauträger** zugeschnitten und verbindet die beiden
+Aufgaben, die im Projektalltag am meisten Zeit und Fehler kosten – **Rechnungsmanagement**
+und **Liquiditätsplanung** – in einem System mit 14 Funktionsbereichen.
 
-**1. Echtzeit-Liquidität als Kernkompetenz.** Projektliquidität wird tagesaktuell und
-projektübergreifend sichtbar – die Grundlage jeder Entwicklungsentscheidung. (10/10)
+**1. Liquidität projektscharf statt Excel.** Bankkonten je Projekt (Giro, Treuhand,
+Darlehen) und eine **24-Monats-Prognose projektscharf** – mit Unterdeckungs-Warnung und
+Soll-Ist-Vergleich. (Liquidität 10/10)
 
-**2. Live-Prognosen & Szenarien.** Forecasts und Szenarien sind direkt mit Projektphasen
-und Verträgen verknüpft und bleiben laufend aktuell. (10/10)
+**2. KI-Rechnungserfassung.** PDF-Upload mit KI-Auslese (Nummer, Beträge, USt., Skonto),
+Vorrang für **ZUGFeRD/XRechnung** und **cent-genaue Zahlbetragsermittlung** inkl.
+Sicherheitseinbehalt, Skonto und kumulierten Abschlägen. (Rechnungen & Freigaben 9/10)
 
-**3. Finanzierung & Mittelabruf.** Finanzierungstranchen und Mittelabrufe werden
-strukturiert gesteuert und überwacht – Eigen- und Fremdkapital im Blick. (10/10)
+**3. Darlehen & Finanzierung, die in die Prognose fließen.** Tilgungspläne (Annuität/
+endfällig, Sondertilgungen) wirken direkt auf die Liquidität. (Finanzierung 10/10)
 
-**4. Anschlussfähig.** Schnittstellen zu DATEV, Banking und ERP sowie
-Multiprojekt-Sicht runden das Bild ab.
+**4. Budget & Reports nach DIN 276.** Gesamtbudget nach DIN 276 × Baukörper, Beauftragt-vs-
+Budget und DIN-276-Reports in Bank-/Mezzanine-Sicht. Dazu Vier-Augen-Freigabe mit
+Ereignis-Log und **Server in Deutschland**.
+
+> Hinweis: LiquiMerge setzt bei Belegen auf **ZUGFeRD/XRechnung und Excel-/XLSX-Export**;
+> eine klassische DATEV-/Banking-API ist (Stand Juli 2026) nicht ausgewiesen – daher der
+> etwas niedrigere Wert bei „Schnittstellen & Export" gegenüber den breiter integrierten
+> Plattformen Alasco und PROBIS.
 
 ### Die stärksten Alternativen
 - **Alasco** (86,3) ist beim **Kostencontrolling nach DIN 276** und bei digitalen
@@ -99,7 +108,7 @@ Multiprojekt-Sicht runden das Bild ab.
 
 ## 7. Quellen
 
-- LiquiMerge – Anbieterangaben (Stand Juli 2026)
+- LiquiMerge – https://www.liquimerge.de/ (Produkt-/Funktionsseite, Anbieterangaben, Stand Juli 2026)
 - Alasco GmbH – https://www.alasco.de/
 - PROBIS (emproc) – https://www.prob.is/
 - Agicap – https://agicap.com/de/
